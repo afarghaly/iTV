@@ -23,6 +23,16 @@
 		E232E80419679289008E3A3E /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E232E7E019679289008E3A3E /* UIKit.framework */; };
 		E232E80C19679289008E3A3E /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = E232E80A19679289008E3A3E /* InfoPlist.strings */; };
 		E232E80E19679289008E3A3E /* iTVTests.m in Sources */ = {isa = PBXBuildFile; fileRef = E232E80D19679289008E3A3E /* iTVTests.m */; };
+		E232E82419679E12008E3A3E /* cncWorld@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E232E81B19679E12008E3A3E /* cncWorld@2x.png */; };
+		E232E82519679E12008E3A3E /* deutscheWelle@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E232E81C19679E12008E3A3E /* deutscheWelle@2x.png */; };
+		E232E82619679E12008E3A3E /* euroNews@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E232E81D19679E12008E3A3E /* euroNews@2x.png */; };
+		E232E82719679E12008E3A3E /* france24@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E232E81E19679E12008E3A3E /* france24@2x.png */; };
+		E232E82819679E12008E3A3E /* i24@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E232E81F19679E12008E3A3E /* i24@2x.png */; };
+		E232E82919679E12008E3A3E /* pressTV@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E232E82019679E12008E3A3E /* pressTV@2x.png */; };
+		E232E82A19679E12008E3A3E /* russiaToday@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E232E82119679E12008E3A3E /* russiaToday@2x.png */; };
+		E232E82B19679E12008E3A3E /* skyNews@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E232E82219679E12008E3A3E /* skyNews@2x.png */; };
+		E232E82C19679E12008E3A3E /* tv-icon.png in Resources */ = {isa = PBXBuildFile; fileRef = E232E82319679E12008E3A3E /* tv-icon.png */; };
+		E232E82E19679E57008E3A3E /* channelsData.plist in Resources */ = {isa = PBXBuildFile; fileRef = E232E82D19679E57008E3A3E /* channelsData.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,6 +68,16 @@
 		E232E80919679289008E3A3E /* iTVTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "iTVTests-Info.plist"; sourceTree = "<group>"; };
 		E232E80B19679289008E3A3E /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		E232E80D19679289008E3A3E /* iTVTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = iTVTests.m; sourceTree = "<group>"; };
+		E232E81B19679E12008E3A3E /* cncWorld@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "cncWorld@2x.png"; sourceTree = "<group>"; };
+		E232E81C19679E12008E3A3E /* deutscheWelle@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "deutscheWelle@2x.png"; sourceTree = "<group>"; };
+		E232E81D19679E12008E3A3E /* euroNews@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "euroNews@2x.png"; sourceTree = "<group>"; };
+		E232E81E19679E12008E3A3E /* france24@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "france24@2x.png"; sourceTree = "<group>"; };
+		E232E81F19679E12008E3A3E /* i24@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "i24@2x.png"; sourceTree = "<group>"; };
+		E232E82019679E12008E3A3E /* pressTV@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "pressTV@2x.png"; sourceTree = "<group>"; };
+		E232E82119679E12008E3A3E /* russiaToday@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "russiaToday@2x.png"; sourceTree = "<group>"; };
+		E232E82219679E12008E3A3E /* skyNews@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "skyNews@2x.png"; sourceTree = "<group>"; };
+		E232E82319679E12008E3A3E /* tv-icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tv-icon.png"; sourceTree = "<group>"; };
+		E232E82D19679E57008E3A3E /* channelsData.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = channelsData.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -126,6 +146,7 @@
 				E232E7F719679289008E3A3E /* iTVDetailViewController.h */,
 				E232E7F819679289008E3A3E /* iTVDetailViewController.m */,
 				E232E7FA19679289008E3A3E /* Images.xcassets */,
+				E232E81719679E12008E3A3E /* resources */,
 				E232E7E319679289008E3A3E /* Supporting Files */,
 			);
 			path = iTV;
@@ -158,6 +179,47 @@
 				E232E80A19679289008E3A3E /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		E232E81719679E12008E3A3E /* resources */ = {
+			isa = PBXGroup;
+			children = (
+				E232E81819679E12008E3A3E /* data */,
+				E232E81919679E12008E3A3E /* images */,
+			);
+			path = resources;
+			sourceTree = "<group>";
+		};
+		E232E81819679E12008E3A3E /* data */ = {
+			isa = PBXGroup;
+			children = (
+				E232E82D19679E57008E3A3E /* channelsData.plist */,
+			);
+			path = data;
+			sourceTree = "<group>";
+		};
+		E232E81919679E12008E3A3E /* images */ = {
+			isa = PBXGroup;
+			children = (
+				E232E81A19679E12008E3A3E /* channel logos */,
+				E232E82319679E12008E3A3E /* tv-icon.png */,
+			);
+			path = images;
+			sourceTree = "<group>";
+		};
+		E232E81A19679E12008E3A3E /* channel logos */ = {
+			isa = PBXGroup;
+			children = (
+				E232E81B19679E12008E3A3E /* cncWorld@2x.png */,
+				E232E81C19679E12008E3A3E /* deutscheWelle@2x.png */,
+				E232E81D19679E12008E3A3E /* euroNews@2x.png */,
+				E232E81E19679E12008E3A3E /* france24@2x.png */,
+				E232E81F19679E12008E3A3E /* i24@2x.png */,
+				E232E82019679E12008E3A3E /* pressTV@2x.png */,
+				E232E82119679E12008E3A3E /* russiaToday@2x.png */,
+				E232E82219679E12008E3A3E /* skyNews@2x.png */,
+			);
+			path = "channel logos";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -237,10 +299,20 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E232E82A19679E12008E3A3E /* russiaToday@2x.png in Resources */,
 				E232E7F319679289008E3A3E /* Main_iPad.storyboard in Resources */,
+				E232E82C19679E12008E3A3E /* tv-icon.png in Resources */,
+				E232E82719679E12008E3A3E /* france24@2x.png in Resources */,
+				E232E82519679E12008E3A3E /* deutscheWelle@2x.png in Resources */,
+				E232E82619679E12008E3A3E /* euroNews@2x.png in Resources */,
+				E232E82419679E12008E3A3E /* cncWorld@2x.png in Resources */,
 				E232E7FB19679289008E3A3E /* Images.xcassets in Resources */,
 				E232E7F019679289008E3A3E /* Main_iPhone.storyboard in Resources */,
+				E232E82819679E12008E3A3E /* i24@2x.png in Resources */,
+				E232E82E19679E57008E3A3E /* channelsData.plist in Resources */,
+				E232E82919679E12008E3A3E /* pressTV@2x.png in Resources */,
 				E232E7E719679289008E3A3E /* InfoPlist.strings in Resources */,
+				E232E82B19679E12008E3A3E /* skyNews@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -477,6 +549,7 @@
 				E232E81319679289008E3A3E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		E232E81419679289008E3A3E /* Build configuration list for PBXNativeTarget "iTVTests" */ = {
 			isa = XCConfigurationList;
@@ -485,6 +558,7 @@
 				E232E81619679289008E3A3E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

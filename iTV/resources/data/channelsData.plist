@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>channelName</key>
+		<string>Sky News</string>
+		<key>channelDescription</key>
+		<string></string>
+		<key>channelCountry</key>
+		<string>United Kingdom</string>
+		<key>channelURL</key>
+		<string>http://wpc.C1A9.edgecastcdn.net/hls-live/20C1A9/skynews/ls_satlink/b_,828,528,264,.m3u8</string>
+		<key>channelLogo</key>
+		<string>skyNews</string>
+	</dict>
+	<dict>
+		<key>channelName</key>
+		<string>Russia Today</string>
+		<key>channelDescription</key>
+		<string></string>
+		<key>channelCountry</key>
+		<string>Russia</string>
+		<key>channelURL</key>
+		<string>http://wpc.c1a9.edgecastcdn.net/hls-live/20C1A9/livestation/ls_lmle/rt_,828,528,264,.m3u8</string>
+		<key>channelLogo</key>
+		<string>russiaToday</string>
+	</dict>
+	<dict>
+		<key>channelName</key>
+		<string>France 24</string>
+		<key>channelDescription</key>
+		<string></string>
+		<key>channelCountry</key>
+		<string>France</string>
+		<key>channelURL</key>
+		<string>http://wpc.C1A9.edgecastcdn.net/hls-live/20C1A9/france24_en/ls_satlink/b_,828,528,264,.m3u8</string>
+		<key>channelLogo</key>
+		<string>france24</string>
+	</dict>
+	<dict>
+		<key>channelName</key>
+		<string>Deutsche Welle</string>
+		<key>channelDescription</key>
+		<string></string>
+		<key>channelCountry</key>
+		<string>Germany</string>
+		<key>channelURL</key>
+		<string>http://www.metafilegenerator.de/DWelle/tv-asia/ios/master.m3u8</string>
+		<key>channelLogo</key>
+		<string>deutscheWelle</string>
+	</dict>
+	<dict>
+		<key>channelName</key>
+		<string>Euro News</string>
+		<key>channelDescription</key>
+		<string></string>
+		<key>channelCountry</key>
+		<string>France</string>
+		<key>channelURL</key>
+		<string>http://livestation_hls-lh.akamaihd.net/i/euronews_en@107240/master.m3u8</string>
+		<key>channelLogo</key>
+		<string>euroNews</string>
+	</dict>
+	<dict>
+		<key>channelName</key>
+		<string>i24</string>
+		<key>channelDescription</key>
+		<string></string>
+		<key>channelCountry</key>
+		<string></string>
+		<key>channelURL</key>
+		<string>http://wpc.C1A9.edgecastcdn.net/hls-live/20C1A9/i24/ls_satlink/b_,828,528,264,.m3u8</string>
+		<key>channelLogo</key>
+		<string>i24</string>
+	</dict>
+	<dict>
+		<key>channelName</key>
+		<string>Press TV</string>
+		<key>channelDescription</key>
+		<string></string>
+		<key>channelCountry</key>
+		<string>Iran</string>
+		<key>channelURL</key>
+		<string>http://hd6.lsops.net/live/presstv_en_hls.smil/playlist.m3u8</string>
+		<key>channelLogo</key>
+		<string>pressTV</string>
+	</dict>
+	<dict>
+		<key>channelName</key>
+		<string>CNC World</string>
+		<key>channelDescription</key>
+		<string></string>
+		<key>channelCountry</key>
+		<string>China</string>
+		<key>channelURL</key>
+		<string>http://wpc.c1a9.edgecastcdn.net/hls-live/20C1A9/livestation/ls_lmle/cnc_,828,528,264,.m3u8</string>
+		<key>channelLogo</key>
+		<string>cncWorld</string>
+	</dict>
+</array>
+</plist>
