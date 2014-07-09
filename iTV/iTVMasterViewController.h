@@ -7,10 +7,11 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "iTVVideoView.h"
 
 @class iTVDetailViewController;
 
-@interface iTVMasterViewController : UITableViewController
+@interface iTVMasterViewController : UIViewController <UITableViewDataSource, UITableViewDelegate, iTVVideoViewDelegate>
 
 @property (strong, nonatomic) iTVDetailViewController *detailViewController;
 

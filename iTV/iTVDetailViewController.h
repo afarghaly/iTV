@@ -7,10 +7,11 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "iTVVideoView.h"
 
-@interface iTVDetailViewController : UIViewController <UISplitViewControllerDelegate>
+@interface iTVDetailViewController : UIViewController <UISplitViewControllerDelegate, iTVVideoViewDelegate>
 
-@property (strong, nonatomic) id detailItem;
+- (void)closeMasterView;
+- (void)playChannel:(NSDictionary *)channelData_;
 
-@property (weak, nonatomic) IBOutlet UILabel *detailDescriptionLabel;
 @end

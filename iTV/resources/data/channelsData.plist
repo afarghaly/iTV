@@ -16,18 +16,6 @@
 	</dict>
 	<dict>
 		<key>channelName</key>
-		<string>Russia Today</string>
-		<key>channelDescription</key>
-		<string></string>
-		<key>channelCountry</key>
-		<string>Russia</string>
-		<key>channelURL</key>
-		<string>http://wpc.c1a9.edgecastcdn.net/hls-live/20C1A9/livestation/ls_lmle/rt_,828,528,264,.m3u8</string>
-		<key>channelLogo</key>
-		<string>russiaToday</string>
-	</dict>
-	<dict>
-		<key>channelName</key>
 		<string>France 24</string>
 		<key>channelDescription</key>
 		<string></string>
@@ -37,18 +25,6 @@
 		<string>http://wpc.C1A9.edgecastcdn.net/hls-live/20C1A9/france24_en/ls_satlink/b_,828,528,264,.m3u8</string>
 		<key>channelLogo</key>
 		<string>france24</string>
-	</dict>
-	<dict>
-		<key>channelName</key>
-		<string>Deutsche Welle</string>
-		<key>channelDescription</key>
-		<string></string>
-		<key>channelCountry</key>
-		<string>Germany</string>
-		<key>channelURL</key>
-		<string>http://www.metafilegenerator.de/DWelle/tv-asia/ios/master.m3u8</string>
-		<key>channelLogo</key>
-		<string>deutscheWelle</string>
 	</dict>
 	<dict>
 		<key>channelName</key>
@@ -64,11 +40,35 @@
 	</dict>
 	<dict>
 		<key>channelName</key>
+		<string>Deutsche Welle</string>
+		<key>channelDescription</key>
+		<string></string>
+		<key>channelCountry</key>
+		<string>Germany</string>
+		<key>channelURL</key>
+		<string>http://www.metafilegenerator.de/DWelle/tv-asia/ios/master.m3u8</string>
+		<key>channelLogo</key>
+		<string>deutscheWelle</string>
+	</dict>
+	<dict>
+		<key>channelName</key>
+		<string>Russia Today</string>
+		<key>channelDescription</key>
+		<string></string>
+		<key>channelCountry</key>
+		<string>Russia</string>
+		<key>channelURL</key>
+		<string>http://wpc.c1a9.edgecastcdn.net/hls-live/20C1A9/livestation/ls_lmle/rt_,828,528,264,.m3u8</string>
+		<key>channelLogo</key>
+		<string>russiaToday</string>
+	</dict>
+	<dict>
+		<key>channelName</key>
 		<string>i24</string>
 		<key>channelDescription</key>
 		<string></string>
 		<key>channelCountry</key>
-		<string></string>
+		<string>Israel</string>
 		<key>channelURL</key>
 		<string>http://wpc.C1A9.edgecastcdn.net/hls-live/20C1A9/i24/ls_satlink/b_,828,528,264,.m3u8</string>
 		<key>channelLogo</key>
