@@ -15,8 +15,6 @@
 		E232E7ED19679289008E3A3E /* iTVAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E232E7EC19679289008E3A3E /* iTVAppDelegate.m */; };
 		E232E7F019679289008E3A3E /* Main_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E232E7EE19679289008E3A3E /* Main_iPhone.storyboard */; };
 		E232E7F319679289008E3A3E /* Main_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E232E7F119679289008E3A3E /* Main_iPad.storyboard */; };
-		E232E7F619679289008E3A3E /* iTVMasterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E232E7F519679289008E3A3E /* iTVMasterViewController.m */; };
-		E232E7F919679289008E3A3E /* iTVDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E232E7F819679289008E3A3E /* iTVDetailViewController.m */; };
 		E232E7FB19679289008E3A3E /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E232E7FA19679289008E3A3E /* Images.xcassets */; };
 		E232E80219679289008E3A3E /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E232E80119679289008E3A3E /* XCTest.framework */; };
 		E232E80319679289008E3A3E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E232E7DC19679289008E3A3E /* Foundation.framework */; };
@@ -33,13 +31,15 @@
 		E232E82B19679E12008E3A3E /* skyNews@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E232E82219679E12008E3A3E /* skyNews@2x.png */; };
 		E232E82C19679E12008E3A3E /* tv-icon.png in Resources */ = {isa = PBXBuildFile; fileRef = E232E82319679E12008E3A3E /* tv-icon.png */; };
 		E232E82E19679E57008E3A3E /* channelsData.plist in Resources */ = {isa = PBXBuildFile; fileRef = E232E82D19679E57008E3A3E /* channelsData.plist */; };
+		E2445A25196F62530072EF50 /* iTVVideoView.m in Sources */ = {isa = PBXBuildFile; fileRef = E2445A24196F62530072EF50 /* iTVVideoView.m */; };
+		E2445A2A196F62700072EF50 /* iTVNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = E2445A29196F62700072EF50 /* iTVNavigationController.m */; };
+		E2445A2E196F63050072EF50 /* iTVMasterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E2445A2D196F63050072EF50 /* iTVMasterViewController.m */; };
+		E2445A32196F63450072EF50 /* iTVDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E2445A31196F63450072EF50 /* iTVDetailViewController.m */; };
 		E244B023196B098500F7ED7C /* videoPausedIcon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E244B021196B098500F7ED7C /* videoPausedIcon@2x.png */; };
 		E244B024196B098500F7ED7C /* videoPlayingIcon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E244B022196B098500F7ED7C /* videoPlayingIcon@2x.png */; };
 		E244B027196B257000F7ED7C /* videoPausedIcon@2x~ipad.png in Resources */ = {isa = PBXBuildFile; fileRef = E244B025196B257000F7ED7C /* videoPausedIcon@2x~ipad.png */; };
 		E244B028196B257000F7ED7C /* videoPlayingIcon@2x~ipad.png in Resources */ = {isa = PBXBuildFile; fileRef = E244B026196B257000F7ED7C /* videoPlayingIcon@2x~ipad.png */; };
 		E27D5DBC196A0474005EC061 /* DeviceUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = E27D5DB8196A0474005EC061 /* DeviceUtils.m */; };
-		E27D5DBD196A0474005EC061 /* iTVNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = E27D5DBB196A0474005EC061 /* iTVNavigationController.m */; };
-		E27D5DC1196A049C005EC061 /* iTVVideoView.m in Sources */ = {isa = PBXBuildFile; fileRef = E27D5DC0196A049C005EC061 /* iTVVideoView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -65,10 +65,6 @@
 		E232E7EC19679289008E3A3E /* iTVAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = iTVAppDelegate.m; sourceTree = "<group>"; };
 		E232E7EF19679289008E3A3E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPhone.storyboard; sourceTree = "<group>"; };
 		E232E7F219679289008E3A3E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPad.storyboard; sourceTree = "<group>"; };
-		E232E7F419679289008E3A3E /* iTVMasterViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = iTVMasterViewController.h; sourceTree = "<group>"; };
-		E232E7F519679289008E3A3E /* iTVMasterViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = iTVMasterViewController.m; sourceTree = "<group>"; };
-		E232E7F719679289008E3A3E /* iTVDetailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = iTVDetailViewController.h; sourceTree = "<group>"; };
-		E232E7F819679289008E3A3E /* iTVDetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = iTVDetailViewController.m; sourceTree = "<group>"; };
 		E232E7FA19679289008E3A3E /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		E232E80019679289008E3A3E /* iTVTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = iTVTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E232E80119679289008E3A3E /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
@@ -85,16 +81,20 @@
 		E232E82219679E12008E3A3E /* skyNews@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "skyNews@2x.png"; sourceTree = "<group>"; };
 		E232E82319679E12008E3A3E /* tv-icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tv-icon.png"; sourceTree = "<group>"; };
 		E232E82D19679E57008E3A3E /* channelsData.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = channelsData.plist; sourceTree = "<group>"; };
+		E2445A23196F62530072EF50 /* iTVVideoView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = iTVVideoView.h; sourceTree = "<group>"; };
+		E2445A24196F62530072EF50 /* iTVVideoView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = iTVVideoView.m; sourceTree = "<group>"; };
+		E2445A28196F62700072EF50 /* iTVNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = iTVNavigationController.h; sourceTree = "<group>"; };
+		E2445A29196F62700072EF50 /* iTVNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = iTVNavigationController.m; sourceTree = "<group>"; };
+		E2445A2C196F63050072EF50 /* iTVMasterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = iTVMasterViewController.h; sourceTree = "<group>"; };
+		E2445A2D196F63050072EF50 /* iTVMasterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = iTVMasterViewController.m; sourceTree = "<group>"; };
+		E2445A30196F63450072EF50 /* iTVDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = iTVDetailViewController.h; sourceTree = "<group>"; };
+		E2445A31196F63450072EF50 /* iTVDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = iTVDetailViewController.m; sourceTree = "<group>"; };
 		E244B021196B098500F7ED7C /* videoPausedIcon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "videoPausedIcon@2x.png"; sourceTree = "<group>"; };
 		E244B022196B098500F7ED7C /* videoPlayingIcon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "videoPlayingIcon@2x.png"; sourceTree = "<group>"; };
 		E244B025196B257000F7ED7C /* videoPausedIcon@2x~ipad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "videoPausedIcon@2x~ipad.png"; sourceTree = "<group>"; };
 		E244B026196B257000F7ED7C /* videoPlayingIcon@2x~ipad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "videoPlayingIcon@2x~ipad.png"; sourceTree = "<group>"; };
 		E27D5DB7196A0474005EC061 /* DeviceUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DeviceUtils.h; sourceTree = "<group>"; };
 		E27D5DB8196A0474005EC061 /* DeviceUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DeviceUtils.m; sourceTree = "<group>"; };
-		E27D5DBA196A0474005EC061 /* iTVNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = iTVNavigationController.h; sourceTree = "<group>"; };
-		E27D5DBB196A0474005EC061 /* iTVNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = iTVNavigationController.m; sourceTree = "<group>"; };
-		E27D5DBF196A049C005EC061 /* iTVVideoView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = iTVVideoView.h; path = iTVVideoView/iTVVideoView.h; sourceTree = "<group>"; };
-		E27D5DC0196A049C005EC061 /* iTVVideoView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = iTVVideoView.m; path = iTVVideoView/iTVVideoView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -159,10 +159,6 @@
 				E232E7EC19679289008E3A3E /* iTVAppDelegate.m */,
 				E232E7EE19679289008E3A3E /* Main_iPhone.storyboard */,
 				E232E7F119679289008E3A3E /* Main_iPad.storyboard */,
-				E232E7F419679289008E3A3E /* iTVMasterViewController.h */,
-				E232E7F519679289008E3A3E /* iTVMasterViewController.m */,
-				E232E7F719679289008E3A3E /* iTVDetailViewController.h */,
-				E232E7F819679289008E3A3E /* iTVDetailViewController.m */,
 				E232E7FA19679289008E3A3E /* Images.xcassets */,
 				E232E81719679E12008E3A3E /* resources */,
 				E232E7E319679289008E3A3E /* Supporting Files */,
@@ -241,6 +237,60 @@
 			path = "channel logos";
 			sourceTree = "<group>";
 		};
+		E2445A21196F62530072EF50 /* views */ = {
+			isa = PBXGroup;
+			children = (
+				E2445A22196F62530072EF50 /* iTVVideoView */,
+			);
+			path = views;
+			sourceTree = "<group>";
+		};
+		E2445A22196F62530072EF50 /* iTVVideoView */ = {
+			isa = PBXGroup;
+			children = (
+				E2445A23196F62530072EF50 /* iTVVideoView.h */,
+				E2445A24196F62530072EF50 /* iTVVideoView.m */,
+			);
+			path = iTVVideoView;
+			sourceTree = "<group>";
+		};
+		E2445A26196F62700072EF50 /* viewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				E2445A27196F62700072EF50 /* iTVNavigationController */,
+				E2445A2B196F63050072EF50 /* iTVMasterViewController */,
+				E2445A2F196F63450072EF50 /* iTVDetailViewController */,
+			);
+			path = viewControllers;
+			sourceTree = "<group>";
+		};
+		E2445A27196F62700072EF50 /* iTVNavigationController */ = {
+			isa = PBXGroup;
+			children = (
+				E2445A28196F62700072EF50 /* iTVNavigationController.h */,
+				E2445A29196F62700072EF50 /* iTVNavigationController.m */,
+			);
+			path = iTVNavigationController;
+			sourceTree = "<group>";
+		};
+		E2445A2B196F63050072EF50 /* iTVMasterViewController */ = {
+			isa = PBXGroup;
+			children = (
+				E2445A2C196F63050072EF50 /* iTVMasterViewController.h */,
+				E2445A2D196F63050072EF50 /* iTVMasterViewController.m */,
+			);
+			path = iTVMasterViewController;
+			sourceTree = "<group>";
+		};
+		E2445A2F196F63450072EF50 /* iTVDetailViewController */ = {
+			isa = PBXGroup;
+			children = (
+				E2445A30196F63450072EF50 /* iTVDetailViewController.h */,
+				E2445A31196F63450072EF50 /* iTVDetailViewController.m */,
+			);
+			path = iTVDetailViewController;
+			sourceTree = "<group>";
+		};
 		E244B020196B098500F7ED7C /* videoPlaybackIcons */ = {
 			isa = PBXGroup;
 			children = (
@@ -255,9 +305,9 @@
 		E27D5DB5196A0474005EC061 /* classes */ = {
 			isa = PBXGroup;
 			children = (
-				E27D5DBE196A047E005EC061 /* iTVVideoView */,
+				E2445A26196F62700072EF50 /* viewControllers */,
+				E2445A21196F62530072EF50 /* views */,
 				E27D5DB6196A0474005EC061 /* DeviceUtils */,
-				E27D5DB9196A0474005EC061 /* iTVNavigationController */,
 			);
 			path = classes;
 			sourceTree = "<group>";
@@ -269,24 +319,6 @@
 				E27D5DB8196A0474005EC061 /* DeviceUtils.m */,
 			);
 			path = DeviceUtils;
-			sourceTree = "<group>";
-		};
-		E27D5DB9196A0474005EC061 /* iTVNavigationController */ = {
-			isa = PBXGroup;
-			children = (
-				E27D5DBA196A0474005EC061 /* iTVNavigationController.h */,
-				E27D5DBB196A0474005EC061 /* iTVNavigationController.m */,
-			);
-			path = iTVNavigationController;
-			sourceTree = "<group>";
-		};
-		E27D5DBE196A047E005EC061 /* iTVVideoView */ = {
-			isa = PBXGroup;
-			children = (
-				E27D5DBF196A049C005EC061 /* iTVVideoView.h */,
-				E27D5DC0196A049C005EC061 /* iTVVideoView.m */,
-			);
-			name = iTVVideoView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -406,12 +438,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				E232E7ED19679289008E3A3E /* iTVAppDelegate.m in Sources */,
-				E27D5DBD196A0474005EC061 /* iTVNavigationController.m in Sources */,
+				E2445A32196F63450072EF50 /* iTVDetailViewController.m in Sources */,
+				E2445A2A196F62700072EF50 /* iTVNavigationController.m in Sources */,
 				E27D5DBC196A0474005EC061 /* DeviceUtils.m in Sources */,
-				E27D5DC1196A049C005EC061 /* iTVVideoView.m in Sources */,
-				E232E7F919679289008E3A3E /* iTVDetailViewController.m in Sources */,
+				E2445A25196F62530072EF50 /* iTVVideoView.m in Sources */,
 				E232E7E919679289008E3A3E /* main.m in Sources */,
-				E232E7F619679289008E3A3E /* iTVMasterViewController.m in Sources */,
+				E2445A2E196F63050072EF50 /* iTVMasterViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

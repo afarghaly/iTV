@@ -127,8 +127,6 @@ static DeviceUtils *_sharedDeviceUtils = nil;
     
     if(self)
     {
-        NSLog(@"[DeviceUtils init]");
-        
         // device / OS version
         UIDevice *currentDevice = [UIDevice currentDevice];
         _isIPhone = [currentDevice userInterfaceIdiom] == UIUserInterfaceIdiomPhone;
@@ -138,7 +136,6 @@ static DeviceUtils *_sharedDeviceUtils = nil;
         // screen dimensions
         UIScreen *mainScreen = [UIScreen mainScreen];
         _deviceLandscapeFrame = [mainScreen applicationFrame];
-        NSLog(@"device landscape frame: %@", NSStringFromCGRect(_deviceLandscapeFrame));
         CGFloat width = _deviceLandscapeFrame.size.width;
         CGFloat height = _deviceLandscapeFrame.size.height;
         if( width < height ) //force landscape frame, if width < height, this is portrait, flip

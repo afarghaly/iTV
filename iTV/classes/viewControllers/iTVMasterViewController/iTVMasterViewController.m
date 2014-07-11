@@ -56,6 +56,7 @@
     
     self.detailViewController = (iTVDetailViewController *)[[self.splitViewController.viewControllers lastObject] topViewController];
     
+    // load channel data
     NSBundle *bundle = [NSBundle mainBundle];
     NSString *channelsDataPath = [bundle pathForResource:@"channelsData" ofType:@"plist"];
     channelsData = [NSArray arrayWithContentsOfFile:channelsDataPath];
@@ -76,6 +77,7 @@
     
     isShowingVideo = NO;
     
+    // for iPhones, create inline video view
     if(DeviceIsiPhone())
     {
         videoView = [[iTVVideoView alloc] initWithFrame:CGRectMake(0, -240, 320, 240)];
@@ -140,9 +142,9 @@
         
         channelsTableView.frame = channelsTableViewFrame;
         [videoView hideVideoControls];
-//        [videoView setVideoScalingMode:MPMovieScalingModeAspectFill];
     }
 }
+
 
 
 // - - - - - - - - - - - -
@@ -243,7 +245,6 @@
 #pragma mark - Mini-video player animations
 
 
-
 - (void)showMiniVideoPlayer
 {
     [UIView animateWithDuration:0.3f animations:^
@@ -281,7 +282,6 @@
 }
 
 
-
 - (void)closeButtonTapped
 {
     if(DeviceIsiPad())
@@ -295,6 +295,14 @@
     }
     self.title = @"iTV";
 }
+
+
+
+// - - - - - - - - - - - -
+
+
+
+#pragma mark iTVVideoViewDelegate methods
 
 
 - (void)videoDidTapDone
@@ -325,6 +333,16 @@
         [videoView hideVideoControls];
     }
 }
+
+
+- (void)videoDidInitialTap
+{
+    // do nothing
+}
+
+
+
+// - - - - - - - - - - - -
 
 
 

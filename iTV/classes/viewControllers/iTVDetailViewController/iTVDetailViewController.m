@@ -8,6 +8,7 @@
 
 #import "iTVDetailViewController.h"
 
+
 @interface iTVDetailViewController ()
 {
     iTVVideoView *videoView;
@@ -32,7 +33,6 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-	// Do any additional setup after loading the view, typically from a nib.
     
     videoView = [[iTVVideoView alloc] initWithFrame:CGRectMake(0, 0, 320, 240)];
     videoView.delegate = self;
@@ -99,8 +99,28 @@
 {
     self.title = channelData_[@"channelName"];
     [videoView playStream:channelData_[@"channelURL"]];
-//    [videoView showVideoControls];
 }
+
+
+
+// - - - - - - - - - - - - - - - - - -
+
+
+
+- (void)videoDidInitialTap
+{
+    [self.masterPopoverController presentPopoverFromBarButtonItem:[self.navigationItem leftBarButtonItem] permittedArrowDirections:UIPopoverArrowDirectionAny animated:YES];
+}
+
+
+- (void)videoDidTapDone
+{
+    // do nothing
+}
+
+
+
+// - - - - - - - - - - - - - - - - - -
 
 
 

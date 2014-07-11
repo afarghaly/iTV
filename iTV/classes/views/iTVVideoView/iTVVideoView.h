@@ -12,6 +12,7 @@
 @protocol iTVVideoViewDelegate
 
 - (void)videoDidTapDone;
+- (void)videoDidInitialTap;
 
 @end
 

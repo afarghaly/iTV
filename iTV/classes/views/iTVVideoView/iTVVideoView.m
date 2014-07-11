@@ -19,6 +19,9 @@
     
     float videoPlaybackIconDimension;
     UIImageView *videoPlaybackIconImageView;
+    
+    BOOL videoHasPlayed;
+    UIImageView *tvImageView;
 }
 
 @property (nonatomic, strong) MPMoviePlayerController *moviePlayer;
@@ -40,6 +43,8 @@
     
     if (self)
     {
+        videoHasPlayed = NO;
+        
         // enable playback while device is locked
         NSError *setCategoryError = nil;
         [[AVAudioSession sharedInstance] setCategory:AVAudioSessionCategoryPlayback error:&setCategoryError];
@@ -82,7 +87,6 @@
         indicatorViewDimension = DeviceIsiPad() ? 60 : 30;
         indicatorView.frame = CGRectMake((frame.size.width - indicatorViewDimension) / 2, (frame.size.height - indicatorViewDimension) / 2, indicatorViewDimension, indicatorViewDimension);
         [self addSubview:indicatorView];
-        [indicatorView startAnimating];
         indicatorView.hidden = YES;
         
         // video playback icon image view
@@ -90,10 +94,23 @@
         videoPlaybackIconImageView = [[UIImageView alloc] initWithFrame:CGRectMake((frame.size.width - videoPlaybackIconDimension) / 2, (frame.size.height - videoPlaybackIconDimension) / 2, videoPlaybackIconDimension, videoPlaybackIconDimension)];
         [self addSubview:videoPlaybackIconImageView];
         videoPlaybackIconImageView.alpha = 0;
+        
+        // TV image
+        tvImageView = [[UIImageView alloc] initWithFrame:CGRectMake((frame.size.width - 150) / 2, (frame.size.height - 150) / 2, 150, 150)];
+        tvImageView.image = [UIImage imageNamed:@"tv-icon"];
+        [self addSubview:tvImageView];
     }
     
     return self;
 }
+
+
+
+// - - - - - - - - - - - -
+
+
+
+#pragma mark - video playback methods
 
 
 - (void)StreamStateChanged
@@ -103,6 +120,7 @@
         case MPMovieLoadStateUnknown:
         case MPMovieLoadStateStalled:
             indicatorView.hidden = NO;
+            
             break;
             
         default:
@@ -119,6 +137,10 @@
     [self.moviePlayer prepareToPlay];
     
     indicatorView.hidden = NO;
+    [indicatorView startAnimating];
+    
+    videoHasPlayed = YES;
+    tvImageView.hidden = YES;
 }
 
 
@@ -133,12 +155,21 @@
 }
 
 
+
+// - - - - - - - - - - - -
+
+
+
+#pragma mark - instance methods
+
+
 - (void)setNewFrame:(CGRect)newFrame_
 {
     self.frame = newFrame_;
     _moviePlayer.view.frame = newFrame_;
     indicatorView.frame = CGRectMake((newFrame_.size.width - indicatorViewDimension) / 2, (newFrame_.size.height - indicatorViewDimension) / 2, indicatorViewDimension, indicatorViewDimension);
     videoPlaybackIconImageView.frame = CGRectMake((newFrame_.size.width - videoPlaybackIconDimension) / 2, (newFrame_.size.height - videoPlaybackIconDimension) / 2, videoPlaybackIconDimension, videoPlaybackIconDimension);
+    tvImageView.frame = CGRectMake((newFrame_.size.width - 150) / 2, (newFrame_.size.height - 250) / 2, 150, 150);
 }
 
 
@@ -166,6 +197,7 @@
 }
 
 
+
 // - - - - - - - - - - - -
 
 
@@ -173,9 +205,16 @@
 #pragma mark - UIGestureRecognizer handling methods
 
 
-
 - (void)videoTapped
 {
+    if(videoHasPlayed == NO)
+    {
+        if(_delegate)
+        {
+            [_delegate videoDidInitialTap];
+        }
+    }
+    
     if(_moviePlayer.playbackState == MPMoviePlaybackStatePaused)
     {
         [_moviePlayer play];
