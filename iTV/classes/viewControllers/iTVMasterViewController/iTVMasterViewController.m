@@ -188,14 +188,25 @@
     NSDictionary *channelData = channelsData[[indexPath row]];
     
     cell.textLabel.text = channelData[@"channelName"];
-    cell.textLabel.font = [UIFont fontWithName:@"HelveticaNeue-Light" size:24];
+    cell.textLabel.font = [UIFont fontWithName:@"HelveticaNeue-Medium" size:26];
+    
+    UIView *shadowHighlightView = [[UIView alloc] initWithFrame:CGRectMake(0, 40, 320, 40)];
+    shadowHighlightView.backgroundColor = [UIColor colorWithRed:0.0f green:0.0f blue:0.0f alpha:0.04f];
+    [cell.contentView addSubview:shadowHighlightView];
+    CALayer *shadowHighlightViewLayer = shadowHighlightView.layer;
+    shadowHighlightViewLayer.cornerRadius = 5;
+    shadowHighlightViewLayer.masksToBounds = YES;
     
     cell.detailTextLabel.text = channelData[@"channelCountry"];
     cell.detailTextLabel.textColor = [UIColor grayColor];
     
-    UIImageView *channelLogoImageView = [[UIImageView alloc] initWithFrame:CGRectMake(0, 0, 80, 80)];
+    UIImageView *channelLogoImageView = [[UIImageView alloc] initWithFrame:CGRectMake(10, 10, 60, 60)];
+    channelLogoImageView.backgroundColor = [UIColor whiteColor];
     channelLogoImageView.image = [UIImage imageNamed:channelData[@"channelLogo"]];
     [cell.contentView addSubview:channelLogoImageView];
+    CALayer *imageViewLayer = channelLogoImageView.layer;
+    imageViewLayer.cornerRadius = 6.0f;
+    imageViewLayer.masksToBounds = YES;
     
     return cell;
 }
